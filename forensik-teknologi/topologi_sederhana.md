@@ -46,6 +46,8 @@ Topologi yang digunakan adalah sebagai berikut:
 | R1 → R2       | 192.168.2.1   | 192.168.3.2    | Paket diteruskan ke R2                |
 | R2 → PC2      | 192.168.3.1   | 192.168.3.2    | Paket sampai ke jaringan tujuan (PC2) |
 
+![Contoh Gambar](img/ping.png)
+
 ## Kesimpulan
 1. **Alamat IP pengirim (Source IP) berubah di setiap router** sesuai dengan interface yang digunakan.  
 2. **Alamat IP tujuan (Destination IP) tetap**, karena tujuan paket tidak berubah.  
