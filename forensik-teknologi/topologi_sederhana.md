@@ -19,6 +19,8 @@ Topologi yang digunakan adalah sebagai berikut:
 - **PC 2**
   - IP: `192.168.3.2/24`
   - Default Gateway: `192.168.3.1`
+  ![Contoh Gambar](img/topologi.png)
+
 
 ## Alur Perubahan Alamat IP
 
