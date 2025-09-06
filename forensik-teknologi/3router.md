@@ -133,6 +133,27 @@ end
 write
 
 
+### Routing Dinamis dengan OSPF
+
+Pada metode ini, digunakan Process ID 1 dan Area 0.
+
+Router0
+router ospf 1
+ network 192.168.10.0 0.0.0.255 area 0
+ network 192.168.30.0 0.0.0.3 area 0
+
+Router1
+router ospf 1
+ network 192.168.30.0 0.0.0.3 area 0
+ network 192.168.40.0 0.0.0.3 area 0
+
+Router2
+router ospf 1
+ network 192.168.20.0 0.0.0.255 area 0
+ network 192.168.40.0 0.0.0.3 area 0
+<img src="img/1g.png" alt="konfigurasi OSPF" width="500" height="300">
+<img src="img/1g.png" alt="ping">
+
 
 ---
 
@@ -154,19 +175,19 @@ Pengujian dilakukan dengan perintah `ping` dari PC ke PC lain lintas jaringan.
 
 Artinya konfigurasi routing sudah benar dan semua jaringan dapat saling berkomunikasi.
 
-![ping](img/1f.png)
 <img src="img/1f.png" alt="ping" width="500" height="300">
 ---
 
 ## 6. Penutup
-Dalam proyek ini berhasil dibangun simulasi jaringan dengan 3 router, 2 switch, dan 4 PC menggunakan Cisco Packet Tracer.  
+
+Dalam proyek ini berhasil dibangun simulasi jaringan dengan 3 router, 2 switch, dan 4 PC menggunakan Cisco Packet Tracer.
 Hasil konfigurasi menunjukkan bahwa:
-- Router PT dapat digunakan untuk menghubungkan beberapa LAN.  
-- Static route berhasil digunakan untuk memungkinkan komunikasi antar jaringan.  
-- Semua PC dalam jaringan yang berbeda dapat saling berkomunikasi.  
 
-**Kesimpulan:**  
-Simulasi ini menunjukkan konsep dasar interkoneksi antar jaringan menggunakan router. Dengan pemahaman ini, dapat dikembangkan ke penggunaan routing dinamis (RIP, OSPF, EIGRP) untuk skala jaringan yang lebih besar.
+Router PT dapat digunakan untuk menghubungkan beberapa LAN.
 
----
+Static route dapat dipakai untuk jaringan kecil, namun membutuhkan konfigurasi manual.
 
+Routing dinamis (OSPF) lebih efisien karena memungkinkan router saling bertukar informasi otomatis.
+
+Kesimpulan:
+Routing dinamis sangat membantu dalam jaringan yang kompleks, sedangkan static route cocok untuk jaringan kecil dan sederhana.
