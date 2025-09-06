@@ -152,7 +152,7 @@ router ospf 1
  network 192.168.20.0 0.0.0.255 area 0
  network 192.168.40.0 0.0.0.3 area 0
 <img src="img/1g.png" alt="konfigurasi OSPF" width="500" height="300">
-<img src="img/1g.png" alt="ping">
+<img src="img/1h.png" alt="ping">
 
 
 ---
