@@ -155,7 +155,7 @@ Pengujian dilakukan dengan perintah `ping` dari PC ke PC lain lintas jaringan.
 Artinya konfigurasi routing sudah benar dan semua jaringan dapat saling berkomunikasi.
 
 ![ping](img/1f.png)
-
+<img src="img/1f.png" alt="ping" width="500" height="300">
 ---
 
 ## 6. Penutup
