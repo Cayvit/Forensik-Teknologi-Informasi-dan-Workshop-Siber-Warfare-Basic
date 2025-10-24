@@ -32,8 +32,6 @@
 
 # Bagian B — Tugas Analisis dan Studi Kasus
 
-> Untuk setiap tugas saya sertakan: (a) analisis hukum/operasional yang ringkas tapi lengkap; (b) rekomendasi praktis; (c) diagram Mermaid untuk alur atau konsep yang diminta; (d) referensi sumber utama.
-
 ---
 
 ## Tugas 1 — Analisis Kerangka Regulasi Nasional dalam Krisis Siber
@@ -68,7 +66,6 @@ Ringkasan alur pengelolaan (sesuai Perpres 47/2023):
 * **Perkuat kemandirian teknologi** (backup lokal, alternatif clearing paths, redundansi komunikasi) sebagai mitigasi jangka menengah. ([BPK Regulation][6])
 
 ### 5) Diagram Mermaid — Alur eskalasi & respons kelembagaan
-
 ```mermaid
 flowchart TD
   A[Deteksi Insiden oleh Operator IIV] --> B[Lapor ke CSIRT Nasional / BSSN]
@@ -148,19 +145,19 @@ Menentukan apakah sebuah sistem jaringan tertentu adalah *military objective* su
 ```mermaid
 flowchart TD
   subgraph WeekEvents
-    A[Peristiwa A: Eksfiltrasi data (no damage)]
-    B[Peristiwa B: DDoS (48 jam)]
-    C[Peristiwa C: Malware -> Kerusakan fisik fregat]
+    A[Peristiwa A: Eksfiltrasi data - no damage]
+    B[Peristiwa B: DDoS 48 jam]
+    C[Peristiwa C: Malware → Kerusakan fisik fregat]
   end
 
   A -->|Klasifikasi| AA[Pelanggaran Kedaulatan]
-  B -->|Klasifikasi| BB[Pelanggaran Kedaulatan or Use of Force?]
-  C -->|Klasifikasi| CC[Use of Force / Armed Attack -> Hak Self-Defense (Art 51)]
+  B -->|Klasifikasi| BB[Pelanggaran Kedaulatan atau Use of Force?]
+  C -->|Klasifikasi| CC[Use of Force / Armed Attack → Hak Self-Defense (Art 51)]
 
   CC -->|Opsi| D[Respon Non-Militer: Diplomasi, Sanksi, Kapasitas Cyber]
   CC -->|Opsi| E[Respon Militer Terbatas (harus patuh IHL)]
-  E --> F[Penilaian Distinction/Proportionality/Precaution]
-  F --> G[Pelaksanaan Operasi (jika sah & proporsional)]
+  E --> F[Penilaian Distinction / Proportionality / Precaution]
+  F --> G[Pelaksanaan Operasi jika sah & proporsional]
 ```
 
 **Sumber & rujukan:** Tallinn Manual 2.0 (analisis *use of force* & ambang armed attack), UN Charter Art.51 (self-defense), ICRC/ICJ bahan tentang IHL & prinsip distinction. ([Cambridge University Press & Assessment][2])
@@ -191,6 +188,7 @@ graph LR
   C --> E
   A --> F
   style F fill:#f9f,stroke:#333,stroke-width:2px
+
 ```
 
 **Interpretasi singkat diagram:** pembinaan yang berkelanjutan (Jalesveva) membangun fondasi (SDM, infra) → kemandirian teknologi memperkuat kapabilitas teknis dan kontrol supply chain → memungkinkan TRIDEK dilaksanakan secara sah & efektif → mengakselerasi tercapainya kedaulatan siber.
