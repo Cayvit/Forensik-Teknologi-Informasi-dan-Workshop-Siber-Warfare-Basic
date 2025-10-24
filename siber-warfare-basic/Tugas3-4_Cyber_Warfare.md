@@ -68,18 +68,18 @@ Ringkasan alur pengelolaan (sesuai Perpres 47/2023):
 ### 5) Diagram Mermaid — Alur eskalasi & respons kelembagaan
 ```mermaid
 flowchart TD
-  A[Deteksi Insiden oleh Operator IIV] --> B[Lapor ke CSIRT Nasional / BSSN]
+  A[Deteksi Insiden oleh Operator IIV] --> B[Lapor ke CSIRT Nasional atau BSSN]
   B --> C{Skala Dampak}
-  C -->|Terbatas| D[Koordinasi Teknis: BSSN + Operator + BI/Pelabuhan]
-  C -->|Meluas / Stabilitas Nasional Terganggu| E[Aktifkan Manajemen Krisis Nasional (Perpres 47/2023)]
-  E --> F[Dewan Keamanan Nasional / Kantor Presiden]
-  E --> G[Koordinasi Penegakan Hukum: Polri + Intelijen]
-  E --> H[Rekomendasi Opsi Kebijakan: Diplomatik / Teknologi / Pertahanan]
+  C -->|Terbatas| D[Koordinasi Teknis: BSSN + Operator + BI atau Pelabuhan]
+  C -->|Meluas atau Stabilitas Nasional Terganggu| E[Aktifkan Manajemen Krisis Nasional - Perpres 47-2023]
+  E --> F[Dewan Keamanan Nasional atau Kantor Presiden]
+  E --> G[Koordinasi Penegakan Hukum: Polri dan Intelijen]
+  E --> H[Rekomendasi Opsi Kebijakan: Diplomatik, Teknologi, Pertahanan]
   H --> I{Ada Bukti Sponsorship Negara?}
   I -->|Ya| J[Otorisasi Keterlibatan TNI Siber oleh Presiden]
-  I -->|Tidak| K[Penegakan Hukum Domestik & Pemulihan]
-  D --> L[Pemulihan Operasional & Audit Keamanan]
-  G --> M[Forensik & Atribusi]
+  I -->|Tidak| K[Penegakan Hukum Domestik dan Pemulihan]
+  D --> L[Pemulihan Operasional dan Audit Keamanan]
+  G --> M[Forensik dan Atribusi]
   M --> H
 ```
 
@@ -145,19 +145,19 @@ Menentukan apakah sebuah sistem jaringan tertentu adalah *military objective* su
 ```mermaid
 flowchart TD
   subgraph WeekEvents
-    A[Peristiwa A: Eksfiltrasi data - no damage]
-    B[Peristiwa B: DDoS 48 jam]
-    C[Peristiwa C: Malware → Kerusakan fisik fregat]
+    A[Peristiwa A: Eksfiltrasi data tanpa kerusakan]
+    B[Peristiwa B: DDoS selama 48 jam]
+    C[Peristiwa C: Malware menyebabkan kerusakan fisik fregat]
   end
 
   A -->|Klasifikasi| AA[Pelanggaran Kedaulatan]
   B -->|Klasifikasi| BB[Pelanggaran Kedaulatan atau Use of Force?]
-  C -->|Klasifikasi| CC[Use of Force / Armed Attack → Hak Self-Defense (Art 51)]
+  C -->|Klasifikasi| CC[Use of Force atau Armed Attack - Hak Self Defense Pasal 51]
 
-  CC -->|Opsi| D[Respon Non-Militer: Diplomasi, Sanksi, Kapasitas Cyber]
-  CC -->|Opsi| E[Respon Militer Terbatas (harus patuh IHL)]
-  E --> F[Penilaian Distinction / Proportionality / Precaution]
-  F --> G[Pelaksanaan Operasi jika sah & proporsional]
+  CC -->|Opsi| D[Respon Non-Militer: Diplomasi, Sanksi, Peningkatan Kapasitas Cyber]
+  CC -->|Opsi| E[Respon Militer Terbatas - Harus Patuh IHL]
+  E --> F[Penilaian Distinction, Proportionality, Precaution]
+  F --> G[Pelaksanaan Operasi Jika Sah dan Proporsional]
 ```
 
 **Sumber & rujukan:** Tallinn Manual 2.0 (analisis *use of force* & ambang armed attack), UN Charter Art.51 (self-defense), ICRC/ICJ bahan tentang IHL & prinsip distinction. ([Cambridge University Press & Assessment][2])
@@ -180,14 +180,15 @@ flowchart TD
 
 ```mermaid
 graph LR
-  A[Jalesveva Jayamahe (Pembinaan Kekuatan)] --> B[SDM, Latihan, Infrastruktur]
+  A[Jalesveva Jayamahe - Pembinaan Kekuatan] --> B[SDM, Latihan, Infrastruktur]
   B --> C[Kemandirian Teknologi Pertahanan Siber]
-  C --> D[Kemampuan Operasional & Forensik Mandiri]
-  D --> E[Implementasi TRIDEK (Penggunaan Kekuatan & Respons)]
-  E --> F[Kedaulatan Siber (Cyber Sovereignty)]
+  C --> D[Kemampuan Operasional dan Forensik Mandiri]
+  D --> E[Implementasi TRIDEK - Penggunaan Kekuatan dan Respons]
+  E --> F[Kedaulatan Siber - Cyber Sovereignty]
   C --> E
   A --> F
   style F fill:#f9f,stroke:#333,stroke-width:2px
+
 
 ```
 
@@ -222,11 +223,12 @@ Untuk setiap peristiwa: Deskripsi singkat — Analisis konseptual — Implikasi 
 ```mermaid
 graph TD
   V[Viasat Attack]
-  V --> A[Target: Modem & Update Servers]
-  V --> B[Effect: Mass Connectivity Loss]
-  V --> C[Lesson: Secure SW Update & Supply Chain]
-  C --> D[Implication: Redundancy & Local Alternatives]
-  C --> E[Implication: Vendor Vetting & Policymaking]
+  V --> A[Target: Modem dan Update Servers]
+  V --> B[Efek: Kehilangan Konektivitas Massal]
+  V --> C[Lesson: Pengamanan Software Update dan Supply Chain]
+  C --> D[Implikasi: Redundansi dan Alternatif Lokal]
+  C --> E[Implikasi: Vendor Vetting dan Kebijakan Publik]
+
 ```
 
 ---
@@ -247,11 +249,12 @@ graph TD
 
 ```mermaid
 graph TD
-  S[Starlink & Tech Giants]
-  S --> A[Benefit: Rapid Connectivity & Tools]
-  S --> B[Risk: Dependence & Policy Gaps]
-  A --> C[Action: Integrate in National Contingency Plans]
-  B --> D[Action: Regulation, Diversification]
+  S[Starlink dan Tech Giants]
+  S --> A[Benefit: Konektivitas Cepat dan Tools]
+  S --> B[Risiko: Ketergantungan dan Celah Kebijakan]
+  A --> C[Aksi: Integrasi dalam Rencana Kontinjensi Nasional]
+  B --> D[Aksi: Regulasi dan Diversifikasi]
+
 ```
 
 ---
@@ -273,10 +276,11 @@ graph TD
 ```mermaid
 graph TD
   W[Wiper Malware Campaigns]
-  W --> A[Target: Gov & Critical Infra]
-  W --> B[Effect: Destruction of Data/Functions]
-  A --> C[Lesson: Backups, Air-gapped Systems]
-  B --> D[Lesson: Need Forensic & Attribution Capacity]
+  W --> A[Target: Pemerintah dan Infrastruktur Kritis]
+  W --> B[Efek: Penghancuran Data atau Fungsi]
+  A --> C[Lesson: Backup dan Sistem Air-gapped]
+  B --> D[Lesson: Forensik dan Atribusi yang Kuat]
+
 ```
 
 **Rangkuman implikasi strategis umum untuk Indonesia:**
