@@ -125,7 +125,7 @@ Insiden **ALFA** mencerminkan **Cyber Crime** yang berfokus pada uang, sedangkan
 
 Dibawah ini adalah visualisasi perbandingan antara **Insiden ALFA (Cyber Crime)** dan **Insiden BETA (Cyber Warfare)** berdasarkan kriteria analisis: **Aktor, Motivasi, Target, Metodologi, dan Tujuan Akhir**.
 
----
+
 
 ```mermaid
 flowchart TD
